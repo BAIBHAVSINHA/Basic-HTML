@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<style>
+table,th,td
+{
+border:1px solid black;
+padding:1px;
+}
+table
+{
+border-spacing:5px;
+}
+</style>
+</HEAD>
+
+<BODY>
+<H1><b>Table within Table</b></H1>
+<HR>
+<table>
+<tr>
+    <th>Header1</th>
+    <th>Header2</th>
+    <th>Header3</th>
+    <th>Header4</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>2</td>
+    <td rowspan="2"><b>Table 1</b>
+      <table>
+          <tr><th>3</th><th>A</th></tr>
+          <tr><th>4</th><th>B</th></tr>
+          <tr><th>5</th><th>C</th></tr>
+      </table>
+    </td>
+    <td>6</td>
+</tr>
+
+<tr>
+    <td><b>Table 2</b>
+      <table>
+          <tr><th>7</th><th>A</th></tr>
+          <tr><th>8</th><th>B</th></tr>
+      </table>
+    </td>
+    <td>9</td>
+    <td rowspan="2">10</td>
+</tr>
+
+<tr>
+     <td>11</td>
+     <td>12</td>
+     <td>13</td>
+</tr>
+
+<tr>
+<td colspan="4">14</td>
+</tr>
+</table>
+</BODY>
+</HTML>
